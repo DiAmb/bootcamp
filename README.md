@@ -10,6 +10,21 @@ Welcome to the Typescript Developer Bootcamp repository! This repository contain
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 
+## Homework Pull Requests
+
+This section contains the pull requests created as part of the bootcamp assignments:
+
+- [Pull Request Homework 1](https://github.com/DiAmb/bootcamp/pull/1): Initial creation of the README file.
+- [Pull Request Homework 2](https://github.com/DiAmb/bootcamp/pull/2): 
+    - Connect to GitHub using SSH.
+    - Protect the main branch.
+    - Create a pull request and request a review.
+- [Pull Request Homework 3](https://github.com/DiAmb/bootcamp/pull/8): 
+    - Create a GitHub Action that triggers when a pull request is opened targeting the main branch.
+    - The GitHub Action prints two messages in the console: one with an environment variable and another with a secret.
+
+
+
 ## About the Project
 
 This bootcamp aims to equip participants with in-depth knowledge of TypeScript, JavaScript fundamentals, testing, server applications, and deployment using Docker. By the end of the program, participants will be able to:
