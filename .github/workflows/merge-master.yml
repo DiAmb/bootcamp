@@ -1,0 +1,20 @@
+name: Display variables in GitHub Actions
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  display-variable-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set and display variable
+        run: |
+          echo "My custom variable is: $MY_VARIABLE"
+
+    env:
+      MY_VARIABLE: "Hello, world!"
