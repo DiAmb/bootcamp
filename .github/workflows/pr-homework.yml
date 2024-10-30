@@ -1,0 +1,24 @@
+name: Print Environment Variables on PR
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  printMessages:
+    runs-on: ubuntu-latest
+
+    env:
+      MY_ENV_VARIABLE: "Hello from environment variable!"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print Environment Variable and Secret
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}
+        run: |
+          echo "Message from environment variable: $MY_ENV_VARIABLE"
+          echo "Message from secret: $MY_SECRET"
